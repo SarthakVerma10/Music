@@ -2,3 +2,161 @@
     display: flex;
     flex-direction: column;
 }
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/dashboard-bg.jpg") no-repeat fixed;
+    background-size: cover;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard-form {
+    margin-top: 2%;
+}
+
+.input {
+    width: 400px;
+    height: 50px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: large;
+    border: solid 2px yellow;
+    border-radius: 5px;
+    background-color: brown;
+    color: white;
+}
+
+.button {
+    width: 200px;
+    align-self: center;
+    margin-top: 3%;
+    cursor: pointer;
+}
+
+.add-head {
+    font-size:xx-large;
+    text-align: center;
+    color: aliceblue;
+    font-weight: 400;
+    text-shadow: 2px 2px #000000;
+}
+
+.card {
+    width: 600px;
+    height: 400px;
+    margin-top: 5%;
+    background-color: brown;
+    align-self: center;
+    opacity: 0.9;
+    border: solid yellow 2px;
+    border-radius: 15px;
+}
+
+.card > a {
+    text-decoration: none;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+    font-size: 7rem;
+}
+
+.categories {
+    width: 100%;
+    position: relative;
+}
+
+#next {
+    position: absolute;
+    right: 10%;
+    top:40%;
+    color: yellow;
+    cursor: pointer;
+}
+
+#prev {
+    position: absolute;
+    left: 10%;
+    top:40%;
+    color: brown;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    padding: 10px 60px;
+    margin-top: 20%;
+    font-size: x-large;
+}
+
+.add {
+    margin-top: 10%;
+}
+
+.songs {
+    margin-top: 5%;
+    background-color: #000000;
+    color: aliceblue;
+    text-align: center;
+    font-size: large;
+    opacity: 0.7;
+}
+
+.songs > * {
+    margin: 0;
+    padding: 20px 0;
+    border-bottom: solid 1px white;
+}
+
+.inside-songs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.inside-songs > button {
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    height: 100%;
+    margin-top: 1%;
+}
+
+.arrows {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .arrows {
+        font-size: 0.3rem;
+    }
+
+    .card {
+        width:300px;
+        height: 100px;
+    }
+
+    .card > a {
+        margin-top: 5%;
+        font-size: xx-large;
+    }
+
+    #next {
+        right: 0;
+    }
+
+    #prev {
+        left: 0;
+    }
+
+    .inside-songs > button {
+        margin-top: 5%;
+    }
+}
+

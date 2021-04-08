@@ -14,4 +14,8 @@
             require("./Components/Songs.php");
         }
     }
+
+    if ($_SERVER['REQUEST_URI'] == "/addcategory") {
+        require("./Components/add-cat-form.php");
+    }
 ?>
