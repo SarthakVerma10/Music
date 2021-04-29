@@ -1,5 +1,5 @@
 <?php
-    $mysqli = new mysqli("localhost", "root", "1234", "music", 3306);
+    $mysqli = new mysqli("db4free.net", "cistbuzz", "Kake_verma10", "playlist_at_mood", 3306);
     require("./Components/base.php");
 
     if ($_SERVER['REQUEST_URI'] == "/") {
